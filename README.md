@@ -25,7 +25,7 @@ GET http://127.0.0.1:5000/user/happyksuh
 Успешный ответ вернется в следующем виде:
 ```
 {
-    "status": "OK",
+	"status": "OK",
 	"Extraversion/Intraversion": "E",
 	"Sensing/Intuition": "S",
 	"Thinking/Feeling": "T",
