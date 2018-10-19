@@ -20,11 +20,17 @@ class User(Resource):
             'Judjing/Perception': j_p
         }
 
+        if random.randint(0, 1) == 1:
+            return None
         return mbti
 
     def get(self, name):
             # download 10 images from instagram
             mbti = self.get_mbti(name)
+            if mbti != None:
+                mbti['status'] = 'OK'
+            else:
+                mbti = {'status': 'ERROR'}
             return mbti
 
 api.add_resource(User, "/user/<string:name>")
