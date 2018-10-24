@@ -25,11 +25,10 @@ GET http://127.0.0.1:5000/user/happyksuh
 Успешный ответ вернется в следующем виде:
 ```
 {
-	"status": "OK",
-	"Extraversion/Intraversion": "E",
-	"Sensing/Intuition": "S",
-	"Thinking/Feeling": "T",
-	"Judjing/Perception": "J"
+    "mbti": {
+        "psy_type": "enfj"
+    },
+    "status": "OK"
 }
 ```
 В случае ошибки ответ будет:
